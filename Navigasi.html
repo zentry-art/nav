@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .h2{
+        font-family: 'Roboto Condensed';
+    }
+</style>
+
+<body>
+<div class="w3-container w3-green">
+ <h2 class="h2">Membuat Menu Tab dan Link</h2>
+ <p>Click Pada Menu Dibawah</p>
+</div>
+<div class="w3-bar w3-grey">
+ <button class="w3-bar-item w3-button" onclick="openKota('Bandung')">Bandung</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Garut')">Garut</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Tasik')">Tasik</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('DrMeow')">DrMeow</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('AntiHero')">Anti-Hero</button>
+</div>
+<div id="Bandung" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>Bandung</h2>
+ <p>Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.
+ Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.</p>
+</div>
+<div id="Garut" class="w3-container kota w3-animate-fading" style="display:none">
+ <h2>Garut</h2>
+ <p>Dikenal dengan Julukan Kota Dodol, dan jaman juga dikenal dengan Jeruk Garut atau Domba
+Garut</p>
+</div>
+<div id="Tasik" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>Tasikmalaya</h2>
+ <p>Atau Tasikmalaya Dikenal dengan Julukan Kota Intan, dan Kota Kerajinan Tangan</p>
+</div>
+<div id="DrMeow" class="w3-container kota w3-animate-right" style="display:none">
+    <h2>Dr.Meow</h2>
+    <img src="Uwu.jpeg">
+    </div>
+<div id="AntiHero" class="w3-container kota w3-spin" style="display:none">
+    <h2>Anti-Hero Sangean</h2>
+    <center>
+        <img src="nico on Twitter.jpeg">
+    </center>
+        </div>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
